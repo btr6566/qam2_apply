@@ -1,0 +1,47 @@
+To configure Sourcetree's extended integration to work with Azure DevOps, enabling features such as Pull Requests directly from the desktop application, follow these steps:
+
+1. **Install Sourcetree:**
+   - Ensure you have Sourcetree installed. You can download it from [Sourcetree's official website](https://www.sourcetreeapp.com/).
+
+2. **Set Up Azure DevOps Personal Access Token (PAT):**
+   - Log in to your Azure DevOps account.
+   - Click on your profile picture in the upper right corner and select "Personal Access Tokens".
+   - Click "New Token".
+   - Give your token a name, set an expiration date, and select the necessary scopes, such as `Code (read and write)`, `Work items (read)`, and `Pull Requests (read and write)`.
+   - Click "Create".
+   - Copy the token and save it securely, as you'll need it in the next steps.
+
+3. **Add Azure DevOps Account to Sourcetree:**
+   - Open Sourcetree.
+   - Go to `Tools` > `Options` > `Authentication` (or `Sourcetree` > `Preferences` > `Accounts` on macOS).
+   - Click the `Add` button.
+   - In the `Host` field, select `Azure DevOps`.
+   - Enter your username (which is usually your email address associated with Azure DevOps).
+   - Select `Personal Access Token` for the Authentication Type.
+   - Paste the Personal Access Token you generated earlier.
+   - Click `OK` to save the account.
+
+4. **Clone or Add Existing Repositories:**
+   - To clone a repository from Azure DevOps:
+     - Click on the `Clone` button in Sourcetree.
+     - Enter the repository URL from Azure DevOps.
+     - Select the destination path on your local machine.
+     - Click `Clone`.
+   - To add an existing local repository associated with Azure DevOps:
+     - Click on `Add` button in Sourcetree.
+     - Select `Add Working Copy`.
+     - Enter the path of your local repository.
+     - Click `Add`.
+
+5. **Enable Extended Integration Features:**
+   - Once the repository is added to Sourcetree, ensure the remote repository settings are correctly configured.
+   - Right-click on the repository in Sourcetree and select `Repository Settings`.
+   - Verify that the `Remotes` section has the correct URL for your Azure DevOps repository.
+
+6. **Using Pull Requests in Sourcetree:**
+   - After configuring the repository, you should see options related to pull requests under the `Repository` or `Branch` menus.
+   - For creating a pull request, go to `Repository` > `Create Pull Request`.
+   - Fill in the necessary details, such as the source and destination branches, title, and description.
+   - Submit the pull request directly from Sourcetree.
+
+By following these steps, you should be able to integrate Sourcetree with Azure DevOps fully, enabling you to use extended features like creating and managing pull requests from the desktop application.
