@@ -1,0 +1,55 @@
+.navBarContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000055;
+    justify-content: center;
+    /* border: 0;
+    margin: 0;
+    padding: 0; */
+}
+
+.vbgLogo{
+    display: inline-block;
+    text-align: left;
+}
+
+.navLinks{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+li {
+    flex-direction: row;
+    list-style-type: none; /* Remove bullets */
+
+
+    width: 120px;
+    height: 30px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+
+    padding: 0; /* Remove padding */
+    margin: 4px; 
+}
+
+
+/* Hyperlinks are Still covered by the "a" tag in the Link objects */
+a {
+    font-family: inherit;
+    text-decoration: none;
+    font-family: 'Poppins'; /*Defitiely applies to Links*/
+    color: white;
+}
+
+a:hover {
+    text-decoration:underline;
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 //Components
 import NavBar from './components/navBar.jsx';
+import Footer from './components/Footer.jsx';
 
 //Pages
 import Home from './pages/Home.jsx';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/summary-data" element={<SummaryData />} />
       </Routes>
+      <Footer></Footer>
     </BrowserRouter>
 
   );
