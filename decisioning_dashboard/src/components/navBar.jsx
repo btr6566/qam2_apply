@@ -1,9 +1,16 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom';
 
 
-// function NavBar() {
-//     return (  );
-// }
+function NavBar() {
+    return ( 
+        <nav>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/summary-data">Summary Data</Link></li>
+            </ul>
+        </nav>
+    );
+}
 
-// export default NavBar;
+export default NavBar;
