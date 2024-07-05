@@ -1,9 +1,15 @@
 import React from 'react'
 
 
+
+
 //SQL Connection
-// import webpackConfigJs from './webpack.config.js';
-// import mssql from 'mssql'
+// import "crypto-browserify";
+// import "web-streams-polyfill/polyfill"; //For resolving issues in mssql import
+// const readable = new ReadableStream();
+
+import mssql from 'mssql'
+
 
 
 
