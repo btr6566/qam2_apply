@@ -8,6 +8,11 @@ import Footer from './components/Footer.jsx';
 //Pages
 import Home from './pages/Home.jsx';
 import SummaryData from './pages/SummaryData.jsx';
+import ReactDefault from './pages/ReactDefault.jsx'
+
+
+//needed to resolve complie errors from Libaries, by using Polyfils
+import webpackConfigJs from './webpack.config.js';
 
 //Resources used here
 
@@ -19,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/summary-data" element={<SummaryData />} />
+        <Route path="/react-default" element={<ReactDefault />} />
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import React from 'react'
-
-
+// import webpackConfigJs from './webpack.config.js';
+// import mssql from 'mssql'
 
 import logo from '../images/logo.svg';
 // import '../App.css';
@@ -12,18 +12,7 @@ function Home () {
     return (  
         <div className={styles.app}>
             <header className={styles.appHeader}>
-                <img src={logo} className={styles.appLogo} alt="logo" />
-                <p>
-                Edit <code>src/App.jsx</code> and save to reload.
-                </p>
-                <a
-                className={styles.appLink}
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-                Learn React - Hello World
-                </a>
+                <p>Hello World!</p>
             </header>
         </div>
     );

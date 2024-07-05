@@ -13,6 +13,7 @@ function NavBar() {
             <ul className={styles.navLinks}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/summary-data">Summary Data</Link></li>
+                <li><Link to="/react-default">TestPage</Link></li>
             </ul>
         </nav>
     );
