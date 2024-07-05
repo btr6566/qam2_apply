@@ -12,7 +12,7 @@ import ReactDefault from './pages/ReactDefault.jsx'
 
 
 //needed to resolve complie errors from Libaries, by using Polyfils
-import webpackConfigJs from './webpack.config.js';
+// import webpackConfigJs from './webpack.config.js';
 
 //Resources used here
 

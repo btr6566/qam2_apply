@@ -1,12 +1,17 @@
 import React from 'react'
+
+
+//SQL Connection
 // import webpackConfigJs from './webpack.config.js';
 // import mssql from 'mssql'
 
-import logo from '../images/logo.svg';
-// import '../App.css';
+
+
+
 
 //CSS
 import styles from './styles/Home.module.css'
+
 
 function Home () {
     return (  
