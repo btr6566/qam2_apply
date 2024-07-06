@@ -1,4 +1,8 @@
 
+#Can reinstall with npm install
+dd_backend/node_modules/*
+decisioning_dashboard/node_modules/*
+
 ~$dule 2 - Apply DRAFT.docx
 ~WRL2771.tmp
 ~WRL1667.tmp
