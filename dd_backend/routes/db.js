@@ -24,24 +24,23 @@ const config = {
 }
 
 
-console.log("Starting...");
-
 async function connectAndQuery(query) {
     try {
         var poolConnection = await sql.connect(config);
 
-        console.log("Reading rows from the Table...");
-
         var resultSet = await poolConnection.request().query(query);
 
+        //Remember the backtick ` can be used to format a string
         console.log(`${resultSet.recordset.length} rows returned.`);
 
         // output column headers
-        var columns = "";
+        var columns = [];
+
         for (var column in resultSet.recordset.columns) {
-            columns += column + ", ";
+            columns.push(column);
         }
-        console.log("%s\t", columns.substring(0, columns.length - 2));
+        
+        console.log(columns);
 
         // ouput row contents from default record set
         resultSet.recordset.forEach(row => {
@@ -80,6 +79,10 @@ const testQuery = `
         su.__PK = 1
 `;
 
+//!===============
+//! Debug
+//!===============
+connectAndQuery(testQuery);
 
 //!===============
 //! Endpoints
