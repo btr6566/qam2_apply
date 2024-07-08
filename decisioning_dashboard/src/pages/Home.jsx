@@ -25,21 +25,21 @@ function Home () {
 
 
     //Loads into state
-    const [data, setData] = React.useState(null);
+    // const [data, setData] = React.useState(null);
 
-    React.useEffect(() => {
-        fetch("/api")
-            .then((res) => res.json())
-            .then((data) => setData(data.message));
-    }, []);
+    // React.useEffect(() => {
+    //     fetch("/api")
+    //         .then((res) => res.json())
+    //         .then((data) => setData(data.message));
+    // }, []);
 
 
 
     return (  
         <div className={styles.app}>
             <header className={styles.appHeader}>
-                {/* <p>Hello World!</p> */}
-                <p>{!data ? "Loading..." : data}</p>
+                <p>Hello World!</p>
+                {/* <p>{!data ? "Loading..." : data}</p> */}
             </header>
         </div>
     );

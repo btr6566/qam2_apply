@@ -21,11 +21,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-app-rewired start",
+    "start": "concurrently \"react-app-rewired start\" \"npm run server\" ",
+    "client": "cd server && npm start",
+    "server": "node ./server/index.js",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:3001",
   "eslintConfig": {
     "extends": [
       "react-app",
