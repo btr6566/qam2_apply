@@ -46,15 +46,17 @@ function SummaryData({delphi}) {
     return (
         <div>
             <div className='pageNav'>
-                <a className='link' href="#cais">CAIS</a>
-                <a className='link' href="#publicInfo">PublicInfo</a>
-                <a className='link' href="#er">ElectoralRoll</a>
-                <a className='link' href="#cifas">CIFAS</a>
-                <a className='link' href="#caps">CAPS</a>
-                <a className='link' href="#noc">NOC</a>
-                <a className='link' href="#cml">CML</a>
-                <a className='link' href="#gain">GAIN</a>
-                <a className='link' href="#tpd">TPD</a>
+                <ul>
+                    <li><a className='link' href="#cais">CAIS</a></li>
+                    <li><a className='link' href="#publicInfo">PublicInfo</a></li>
+                    <li><a className='link' href="#er">ElectoralRoll</a></li>
+                    <li><a className='link' href="#cifas">CIFAS</a></li>
+                    <li><a className='link' href="#caps">CAPS</a></li>
+                    <li><a className='link' href="#noc">NOC</a></li>
+                    <li><a className='link' href="#cml">CML</a></li>
+                    <li><a className='link' href="#gain">GAIN</a></li>
+                    <li><a className='link' href="#tpd">TPD</a></li>
+                </ul>
             </div>
 
             <div className='content'>
