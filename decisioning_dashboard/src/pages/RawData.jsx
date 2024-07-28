@@ -1,41 +1,50 @@
 import React from 'react'
 
+import CaisTable from '../components/CaisTable';
+
+import styles from './styles/SideNavBarPage.module.css'
+
+// import delphi from '../placeholders/delphiJSONPayload.json'
 
 //!==============
 //! Component Definition
 //!==============
-function SummaryData(delphi) {
+function RawData({delphi}) {
 
     //Objects for Full Consumer Data (not complete)
-    // caisData = delphi.Response.ConsumerData.FullConsumerData.CAIS;
+    const caisData = delphi.Response.FullConsumerData.ConsumerData.CAIS;
 
-    // associationData = delphi.Response.ConsumerData.FullConsumerData.Association;
+    // associationData = delphi.Response.FullConsumerData.Association;
 
-    // locationLinkData = delphi.Response.ConsumerData.FullConsumerData.LocationLink;
+    // locationLinkData = delphi.Response.FullConsumerData.LocationLink;
 
-    // previousApplicationData = delphi.Response.ConsumerData.FullConsumerData.PreviousApplication;
+    // previousApplicationData = delphi.Response.FullConsumerData.PreviousApplication;
 
-    // extendedPreviousAppData = delphi.Response.ConsumerData.FullConsumerData.ExtendedPreviousApp;
+    // extendedPreviousAppData = delphi.Response.FullConsumerData.ExtendedPreviousApp;
 
-    // votersRollLocationData = delphi.Response.ConsumerData.FullConsumerData.VotersRollLocation;
+    // votersRollLocationData = delphi.Response.FullConsumerData.VotersRollLocation;
 
-    // votersRollPersonData = delphi.Response.ConsumerData.FullConsumerData.VotersRollPerson;
+    // votersRollPersonData = delphi.Response.FullConsumerData.VotersRollPerson;
 
 
     return (
-        <div>
-            <p>
-            Ornare vehicula arcu at habitant erat scelerisque ullamcorper? Sociosqu
-            lorem at cras dui ornare potenti litora pulvinar primis? Amet eros
-            habitasse integer sed. Fusce est curabitur tempus vel ridiculus
-            porttitor hendrerit non integer primis mus vel. Arcu neque egestas
-            ullamcorper lobortis dolor adipiscing commodo. Justo vivamus aenean
-            parturient. Aliquam pellentesque auctor porttitor diam magnis erat
-            phasellus! Mattis inceptos tempus lacinia, elementum ut sagittis vel
-            ante. Sociis netus, ornare lorem nec.
-            </p>
+        <div className={styles.container}>
+        <div className={styles.pageNav}>
+            <ul className={styles.pageLinksList}>
+                <li className={styles.pageLink}><a className='link' href="#cais">CAIS</a></li>
+            </ul>
         </div>
+
+        <div className={styles.content}>
+            <h1>Raw Data</h1>
+            
+            <h2 id='cais'>CAIS - Credit Account Information Sharing</h2>
+            <CaisTable jsonData={caisData}/>
+
+
+        </div>
+    </div>
     );
 }
 
-export default SummaryData;
+export default RawData;

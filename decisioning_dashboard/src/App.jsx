@@ -23,7 +23,7 @@ import ReactDefault from './pages/ReactDefault.jsx';
 //Placeholders
 //-----------
 import delphi from './placeholders/delphiJSONPayload.json'
-
+import delphiSwagger from './placeholders/Delphi_Swagger_Sample.json'
 
 ////needed to resolve complie errors from Libaries, by using Polyfils
 //// import webpackConfigJs from './webpack.config.js';
@@ -40,7 +40,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/summary-data" element={<SummaryData delphi={delphi} />} />
         <Route path="/premium-value-data" element={<PremiumValueData delphi={delphi} />} />
-        <Route path="/raw-data" element={<RawData />} />
+        <Route path="/raw-data" element={<RawData delphi={delphiSwagger}/>} />
         <Route path="/react-default" element={<ReactDefault />} />
       </Routes>
       <Footer></Footer>
