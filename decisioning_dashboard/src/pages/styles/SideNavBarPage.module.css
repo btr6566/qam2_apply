@@ -27,6 +27,15 @@
     z-index: 975; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
 }
 
+.pageLinkLvl2 {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100; /* Adjust this value to control the distance from the top */
+    z-index: 975; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+
+    margin-left: 20px; /* Adjust the value as needed */
+}
+
 
 .content {
     flex-grow: 1;
