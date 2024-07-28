@@ -1,0 +1,33 @@
+.tableBody{
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 25%;
+    
+}
+
+.tableHeader{
+    border: 1px solid;
+    background-color: #000055;
+    text-align: right;
+    
+}
+
+
+.tableRow{
+    border: 1px solid;
+    /* text-align: left; */
+}
+
+.tableRow:hover{
+    background-color: coral;
+}
+
+.tableCell{
+    color: white;
+}
+
+
+/* th, td {
+    padding: 5px;
+    text-align: left;
+} */

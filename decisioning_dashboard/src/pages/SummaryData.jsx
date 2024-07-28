@@ -47,8 +47,8 @@ function SummaryData({delphi}) {
             <div className={styles.pageNav}>
                 <ul className={styles.pageLinksList}>
                     <li className={styles.pageLink}><a className='link' href="#cais">CAIS</a></li>
-                    <li className={styles.pageLink}><a className='link' href="#publicInfo">PublicInfo</a></li>
-                    <li className={styles.pageLink}><a className='link' href="#er">ElectoralRoll</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#publicInfo">Public Info</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#er">Electoral Roll</a></li>
                     <li className={styles.pageLink}><a className='link' href="#cifas">CIFAS</a></li>
                     <li className={styles.pageLink}><a className='link' href="#caps">CAPS</a></li>
                     <li className={styles.pageLink}><a className='link' href="#noc">NOC</a></li>

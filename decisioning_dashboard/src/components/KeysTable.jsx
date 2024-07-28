@@ -2,7 +2,7 @@ import React from 'react'
 
 import KeyValueRow from './KeyValueRow';
 
-// import styles from './styles/navBar.module.css'
+import styles from './styles/KeysTable.module.css'
 
 
 
@@ -14,11 +14,13 @@ import KeyValueRow from './KeyValueRow';
 function KeysTable({jsonData}) {
 
     return ( 
-        <table>
-            <th>
-                <td>Variable</td>
-                <td>Value</td>
-            </th>
+        <table className={styles.tableBody}>
+            <thead>
+                <tr className={styles.tableHeader}>
+                    <th className={styles.tableCell}>Variable</th>
+                    <th className={styles.tableCell}>Value</th>
+                </tr>
+            </thead>
             <tbody>
                 {
                     Object.entries(jsonData).map(([key, value]) => {
