@@ -3,7 +3,7 @@
 }
 
 .pageNav {
-    width: 200px; /* Adjust the width as needed */
+    width: 250px; /* Adjust the width as needed */
     background-color: #6e61ff; /* Optional: for visual distinction */
 
     position: -webkit-sticky; /* For Safari */

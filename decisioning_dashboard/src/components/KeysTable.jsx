@@ -20,9 +20,21 @@ function KeysTable({jsonData}) {
                 <td>Value</td>
             </th>
             <tbody>
-                {Object.entries(jsonData).map(([key, value]) => (
-                    <KeyValueRow key={key} jKey={key} value={value}/>
-                    )
+                {
+                    Object.entries(jsonData).map(([key, value]) => {
+
+                        // console.log(value);
+                        // console.log(typeof value);
+
+                        return (
+                            
+                            // Do NOT render rows that are NULL, waste of time
+                            value !== undefined && value !== null  && value !== ''  ? (
+                                <KeyValueRow key={key} jKey={key} value={value} />
+                            ) : null
+        
+                        )
+                    }
                 )}
             </tbody>
         </table>
