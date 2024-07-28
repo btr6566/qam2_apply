@@ -1,9 +1,8 @@
 import React from 'react'
 
 import KeysTable from '../components/KeysTable';
-import KeyValueRow from '../components/KeyValueRow';
 
-// import styles from './styles/navBar.module.css'
+import styles from './styles/SideNavBarPage.module.css'
 
 // import delphi from '../placeholders/delphiJSONPayload.json'
 
@@ -44,23 +43,23 @@ function SummaryData({delphi}) {
 
 
     return (
-        <div>
-            <div className='pageNav'>
-                <ul>
-                    <li><a className='link' href="#cais">CAIS</a></li>
-                    <li><a className='link' href="#publicInfo">PublicInfo</a></li>
-                    <li><a className='link' href="#er">ElectoralRoll</a></li>
-                    <li><a className='link' href="#cifas">CIFAS</a></li>
-                    <li><a className='link' href="#caps">CAPS</a></li>
-                    <li><a className='link' href="#noc">NOC</a></li>
-                    <li><a className='link' href="#cml">CML</a></li>
-                    <li><a className='link' href="#gain">GAIN</a></li>
-                    <li><a className='link' href="#tpd">TPD</a></li>
+        <div className={styles.container}>
+            <div className={styles.pageNav}>
+                <ul className={styles.pageLinksList}>
+                    <li className={styles.pageLink}><a className='link' href="#cais">CAIS</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#publicInfo">PublicInfo</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#er">ElectoralRoll</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#cifas">CIFAS</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#caps">CAPS</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#noc">NOC</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#cml">CML</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#gain">GAIN</a></li>
+                    <li className={styles.pageLink}><a className='link' href="#tpd">TPD</a></li>
                 </ul>
             </div>
 
-            <div className='content'>
-                <h1>Raw Data Summary</h1>
+            <div className={styles.content}>
+                <h1>Summary of Raw Data</h1>
                 
                 <h2 id='cais'>CAIS - Credit Account Information Sharing</h2>
                 <KeysTable jsonData={cais}/>

@@ -14,12 +14,14 @@ function NavBar() {
         <nav className={styles.navBarContainer}>
             {/* Logo roughly 12.5% of original size */}
             <img className={styles.vbgLogo} src={vbgLogo} width={238} height={75} alt="logo" />
+
+            {/* Using a ClassName per link rather then on li itself, cascades outside the component otherwise */}
             <ul className={styles.navLinks}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/summary-data">Summary</Link></li>
-                <li><Link to="/premium-value-data">Premium Value</Link></li>
-                <li><Link to="/raw-data">Raw Data</Link></li>
-                <li><Link to="/react-default">TestPage</Link></li>
+                <li className={styles.pLink}><Link to="/">Home</Link></li>
+                <li className={styles.pLink}><Link to="/summary-data">Summary</Link></li>
+                <li className={styles.pLink}><Link to="/premium-value-data">Premium Value</Link></li>
+                <li className={styles.pLink}><Link to="/raw-data">Raw Data</Link></li>
+                <li className={styles.pLink}><Link to="/react-default">TestPage</Link></li>
             </ul>
         </nav>
     );

@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+}
+
+.pageNav {
+    width: 200px; /* Adjust the width as needed */
+    background-color: #6e61ff; /* Optional: for visual distinction */
+
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100; /* Adjust this value to control the distance from the top */
+    z-index: 900; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+
+}
+
+.pageLinksList {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100; /* Adjust this value to control the distance from the top */
+    z-index: 950; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+}
+
+.pageLink {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100; /* Adjust this value to control the distance from the top */
+    z-index: 975; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 20px; /* Optional: for spacing */
+}
