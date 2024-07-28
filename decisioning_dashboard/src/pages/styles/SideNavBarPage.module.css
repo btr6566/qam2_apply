@@ -6,6 +6,8 @@
     width: 250px; /* Adjust the width as needed */
     background-color: #6e61ff; /* Optional: for visual distinction */
 
+    word-wrap: break-word; /* or word-break: break-all; */
+
     position: -webkit-sticky; /* For Safari */
     position: sticky;
     top: 100; /* Adjust this value to control the distance from the top */
