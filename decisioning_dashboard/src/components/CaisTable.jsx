@@ -31,17 +31,19 @@ function CaisTable({jsonData}) {
                     <th className={styles.tableCell}>SettleDateCaption</th>
                 </tr>
             </thead>
-            {/* <tbody>
+            <tbody>
                 {
-                    jsonData.array.forEach(element => {
+                    jsonData.forEach(element => {
                     
+                        console.log(element);
                         <tr>
-                            <td></td>
+                            <td>{element.LocationIndicator}</td>
+                            <td>{element.ApplicantIndicator}</td>
                         </tr>
 
                     })
                 }
-            </tbody> */}
+            </tbody>
         </table>
     );
 }
