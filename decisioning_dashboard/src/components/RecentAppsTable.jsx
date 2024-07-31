@@ -5,6 +5,8 @@ import{React, useState, useEffect} from 'react'
 
 import RecentAppItem from '../components/RecentAppItem';
 
+import styles from './styles/Tables.module.css'
+
 
 //Backend
 const mostRecentURL = 'http://localhost:3001/test';
@@ -58,8 +60,8 @@ function RecentAppsTable() {
 
     return ( 
         <div>
-            <table>
-                <thead>
+            <table className={styles.tableBody}>
+                <thead className={styles.tableHeader}>
                     <th>ID</th>
                     <th>ApplicationDatetime</th>
                     <th>Decision</th>
