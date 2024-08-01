@@ -1,6 +1,7 @@
 import React from 'react'
 
-import KeyValueRow from './KeyValueRow';
+// import KeyValueRow from './KeyValueRow';
+import CaisRow from './CaisRow'
 
 import styles from './styles/Tables.module.css'
 
@@ -13,8 +14,8 @@ import styles from './styles/Tables.module.css'
 //use the name jKey as key is a reserved word for adding a PK to every rendered iteration of the component
 function CaisTable({jsonData}) {
 
-    console.log(typeof jsonData);
-    console.log(jsonData);
+    // console.log(typeof jsonData);
+    // console.log(jsonData);
 
     return ( 
         <table className={styles.tableBody}>
@@ -32,14 +33,38 @@ function CaisTable({jsonData}) {
                 </tr>
             </thead>
             <tbody>
+
                 {
                     jsonData.forEach(element => {
                     
-                        console.log(element);
-                        <tr>
-                            <td>{element.LocationIndicator}</td>
-                            <td>{element.ApplicantIndicator}</td>
-                        </tr>
+                        
+                        
+
+                        let LocationIndicator = element.LocationIndicator;
+                        let ApplicantIndicator = element.ApplicantIndicator;
+                        let CAISDetails = element.CAISDetails;
+
+                        CAISDetails.forEach(caisdetail => {
+
+                            // let key = caisdetail.index();
+
+                            <CaisRow LocationIndicator={LocationIndicator} ApplicantIndicator={ApplicantIndicator} CAISDetails={caisdetail}/>
+                        
+                            // console.log(element);
+                            // console.log(LocationIndicator);
+                            // console.log(ApplicantIndicator);
+                            // console.log(CAISDetails);
+                        
+                        });
+
+                        //returns (destructured parameter) is not iterable?
+                        // CAISDetails.map(([index,value]) => {
+                        //     return(
+
+                        //         <CaisRow key={index} LocationIndicator={LocationIndicator} ApplicantIndicator={ApplicantIndicator} CAISDetails={value}/>
+                        //     )
+                            
+                        // })
 
                     })
                 }
