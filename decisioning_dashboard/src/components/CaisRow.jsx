@@ -2,7 +2,7 @@ import React from 'react'
 
 // import KeyValueRow from './KeyValueRow';
 
-import styles from './styles/Tables.module.css'
+// import styles from './styles/Tables.module.css'
 
 
 
@@ -14,6 +14,13 @@ import styles from './styles/Tables.module.css'
 function CaisRow({LocationIndicator, ApplicantIndicator, CAISDetails}) {
 
     
+    const AccountType = CAISDetails.AccountType;
+    
+    console.log(LocationIndicator);
+    console.log(ApplicantIndicator);
+    console.log(CAISDetails);
+    console.log(AccountType);
+
 
     return ( 
 
@@ -21,6 +28,7 @@ function CaisRow({LocationIndicator, ApplicantIndicator, CAISDetails}) {
         <tr>
             <td>{LocationIndicator}</td>
             <td>{ApplicantIndicator}</td>
+            <td>{AccountType}</td>
             
         
 

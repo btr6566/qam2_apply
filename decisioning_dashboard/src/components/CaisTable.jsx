@@ -44,6 +44,8 @@ function CaisTable({jsonData}) {
                         let ApplicantIndicator = element.ApplicantIndicator;
                         let CAISDetails = element.CAISDetails;
 
+                        console.log(CAISDetails.length);
+
                         CAISDetails.forEach(caisdetail => {
 
                             // let key = caisdetail.index();
@@ -53,7 +55,7 @@ function CaisTable({jsonData}) {
                             // console.log(element);
                             // console.log(LocationIndicator);
                             // console.log(ApplicantIndicator);
-                            // console.log(CAISDetails);
+                            console.log(caisdetail);
                         
                         });
 
