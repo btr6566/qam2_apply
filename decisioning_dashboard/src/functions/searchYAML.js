@@ -4,7 +4,7 @@
 //Chat_GPT 4 recommended :)
 //====================
 
-
+//This would be idea but I think is overly complicated
 
 //------
 // Pachages needed
