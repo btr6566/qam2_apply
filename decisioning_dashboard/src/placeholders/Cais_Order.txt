@@ -19,6 +19,7 @@ $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Balance
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Balance.Amount
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Balance.Caption
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Balance.Narrative
+
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].BankFlag
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CMLLocationType
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CardHistories

@@ -18,18 +18,23 @@ function CaisTable({jsonData}) {
     // console.log(jsonData);
 
     return ( 
-        <table className={styles.tableBody}>
+        <table className={styles.caisTableBody}>
             <thead>
                 <tr className={styles.tableHeader}>
-                    <th className={styles.tableCell}>LocationIndicator</th>
-                    <th className={styles.tableCell}>ApplicantIndicator</th>
+                    <th className={styles.tableCell}>Location Indicator</th>
+                    {/* <th className={styles.tableCell}>Applicant Indicator</th> */}
+                    <th className={styles.tableCell}>Match To</th>
 
-                    <th className={styles.tableCell}>AccountType</th>
-                    <th className={styles.tableCell}>AccountStatus</th>
-                    <th className={styles.tableCell}>CAISAccStartDate</th>
-                    <th className={styles.tableCell}>JointAccount</th>
-                    <th className={styles.tableCell}>SettlementDate</th>
-                    <th className={styles.tableCell}>SettleDateCaption</th>
+                    <th className={styles.tableCell}>Account Type</th>
+                    <th className={styles.tableCell}>Account Status</th>
+                    <th className={styles.tableCell}>CAIS Account Start Date</th>
+                    <th className={styles.tableCell}>Joint Account?</th>
+                    <th className={styles.tableCell}>Settlement Date</th>
+                    {/* <th className={styles.tableCell}>Settlement Date Caption</th> */}
+                    <th className={styles.tableCell}>Current Balance</th>
+                    <th className={styles.tableCell}>Credit Limit</th>
+                    <th className={styles.tableCell}>Payment</th>
+                    <th className={styles.tableCell}>Current Status</th>
                 </tr>
             </thead>
             <tbody>
@@ -59,10 +64,10 @@ function CaisTable({jsonData}) {
 
                 {
                     //Using Map instead, which also solves the index problem
-                    jsonData.map((element, index) => {
-                        let LocationIndicator = element.LocationIndicator;
-                        let ApplicantIndicator = element.ApplicantIndicator;
-                        let CAISDetails = element.CAISDetails;
+                    jsonData.map((cais, index) => {
+                        let LocationIndicator = cais.LocationIndicator;
+                        let ApplicantIndicator = cais.ApplicantIndicator;
+                        let CAISDetails = cais.CAISDetails;
 
                         return CAISDetails.map((caisdetail, caisIndex) => (
                             <CaisRow
