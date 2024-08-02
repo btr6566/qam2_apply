@@ -1,3 +1,8 @@
+
+--------------------
+-- Using
+--------------------
+
 $.Response.FullConsumerData.ConsumerData.CAIS[0].ApplicantIndicator
 $.Response.FullConsumerData.ConsumerData.CAIS[0].LocationIndicator
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountType
@@ -7,12 +12,27 @@ $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].JointAccount
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].SettlementDate
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].SettleDateCaption
 
-$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountBalances
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountBalances[0].AccountBalance
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountBalances[0].Status
+$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.MatchTo
 
+$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CreditLimit.Amount
+$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Payment
+
+
+--------------------
+-- Objects
+--------------------
+
+$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountBalances
 
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].AccountStatusCodes
+
+
+
+--------------------
+-- Not Using
+--------------------
 
 
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Balance
@@ -36,7 +56,6 @@ $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CredLimitHistori
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CredLimitHistories[0].CreditLimitDate.CreditLimitDateMM
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CredLimitHistories[0].CreditLimitDate.CreditLimitDateYY
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CreditLimit
-$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CreditLimit.Amount
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CreditLimit.Caption
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CreditLimit.Narrative
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].CurrentDefBalance
@@ -54,7 +73,6 @@ $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.BureauRefCategory
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.ForenameMatchLevel
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.HouseMatchLevel
-$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.MatchTo
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.MatchType
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.StreetMatchLevel
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].MatchDetails.SurnameMatchLevel
@@ -76,7 +94,6 @@ $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].NumCreditLimChng
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].NumOfMonthsHistory
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].NumStatuses
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].OwnData
-$.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].Payment
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].PaymentFrequency
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].RepaymentPeriod
 $.Response.FullConsumerData.ConsumerData.CAIS[0].CAISDetails[0].RepaymentPeriods
