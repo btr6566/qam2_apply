@@ -40,7 +40,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/summary-data" element={<SummaryData delphi={delphi} />} />
         <Route path="/premium-value-data" element={<PremiumValueData delphi={delphi} />} />
-        <Route path="/raw-data" element={<RawData delphi={delphiSwagger}/>} />
+        <Route path="/raw-data" element={<RawData delphi={delphi}/>} />
         <Route path="/react-default" element={<ReactDefault />} />
       </Routes>
       <Footer></Footer>

@@ -2,7 +2,7 @@ import React from 'react'
 
 // import KeyValueRow from './KeyValueRow';
 
-// import styles from './styles/Tables.module.css'
+import styles from './styles/Tables.module.css'
 
 
 
@@ -25,7 +25,7 @@ function CaisRow({LocationIndicator, ApplicantIndicator, CAISDetails}) {
     return ( 
 
         
-        <tr>
+        <tr className={styles.tableRow}>
             <td>{LocationIndicator}</td>
             <td>{ApplicantIndicator}</td>
             <td>{AccountType}</td>
