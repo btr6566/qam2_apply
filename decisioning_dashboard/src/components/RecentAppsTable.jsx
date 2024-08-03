@@ -1,5 +1,5 @@
 import{React, useState, useEffect} from 'react'
-
+//require('dotenv').config(); //allows /.env files to be read?
 
 // import styles from './styles/navBar.module.css'
 
@@ -9,10 +9,12 @@ import styles from './styles/Tables.module.css'
 
 
 //Backend
-const mostRecentURL = 'http://localhost:3001/test';
+// const mostRecentURL = 'http://localhost:3001/test';
+const mostRecentURL = process.env.REACT_APP_RECENT_APPS_URL; //For react, vars must start with "REACT_APP_"
 
-
-
+// console.log("MostRecentURL:");
+// console.log(typeof mostRecentURL);
+// console.log(mostRecentURL);
 
 //!==============
 //! Component Definition
@@ -62,9 +64,11 @@ function RecentAppsTable() {
         <div>
             <table className={styles.tableBody}>
                 <thead className={styles.tableHeader}>
-                    <th>ID</th>
-                    <th>ApplicationDatetime</th>
-                    <th>Decision</th>
+                    <tr>
+                        <th>ID</th>
+                        <th>ApplicationDatetime</th>
+                        <th>Decision</th>
+                    </tr>
                 </thead>
                 <tbody>
                     {recentApps}

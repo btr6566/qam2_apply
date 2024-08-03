@@ -23,7 +23,7 @@ import ReactDefault from './pages/ReactDefault.jsx';
 //Placeholders
 //-----------
 import delphi from './placeholders/delphiJSONPayload.json'
-import delphiSwagger from './placeholders/Delphi_Swagger_Sample.json'
+// import delphiSwagger from './placeholders/Delphi_Swagger_Sample.json'
 
 ////needed to resolve complie errors from Libaries, by using Polyfils
 //// import webpackConfigJs from './webpack.config.js';
