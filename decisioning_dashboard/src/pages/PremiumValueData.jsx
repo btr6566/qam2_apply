@@ -97,90 +97,118 @@ function PremiumValueData({delphi}) {
                 <h1>Premium Value Data</h1>
                 
                     <h2 id='tpd'>TPD</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={tpd}/>
 
                     <h2 id='cii'>CII - Consumer Indebtness Index</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={cii}/>
 
                     <h2 id='mosaic'>Mosaic</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={mosaic}/>
 
                     <h2 id='scoring'>Scoring</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={scoring}/>
 
                     <h2 id='sortCodeAggregation'>SortCodeAggregation</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={sortCodeAggregation}/>
 
                     <h2 id='addrLink'>AddrLink</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={addrLink}/>
 
                     <h2 id='director'>Director</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={director}/>
 
                     <h2 id='ageDoB'>AgeDoB</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={ageDoB}/>
 
                     <h2 id='bespoke'>Bespoke</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={bespoke}/>
 
                     <h2 id='impairedCH'>ImpairedCH</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={impairedCH}/>
 
                     <h2 id='DeferredPaymentCreditSummary'>DeferredPaymentCreditSummary</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={DeferredPaymentCreditSummary}/>
 
                 <h1 id='additDelphiBlocks'>Addit Delphi Blocks</h1>
 
                     <h2 id='APACSCCBehavrlData'>APACSCCBehavrlData</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={APACSCCBehavrlData}/>
 
                     <h2 id='Utilisationblock'>Utilisationblock</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={Utilisationblock}/>
 
                     <h2 id='NeverPaidDefsBlock'>NeverPaidDefsBlock</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={NeverPaidDefsBlock}/>
 
                     <h2 id='TelecommsBlock'>TelecommsBlock</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={TelecommsBlock}/>
 
                     <h2 id='TrendedData'>TrendedData</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={TrendedData}/>
 
                     <h2 id='EstimatedDisposableIncomeRAG'>EstimatedDisposableIncomeRAG</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={EstimatedDisposableIncomeRAG}/>
 
                     <h2 id='HighCostCredit'>HighCostCredit (formerly the HomeCreditBlock)</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={HighCostCredit}/>
 
                 <h1 id='VerticalMarkets'>Vertical Markets Blocks</h1>
                     <h2 id='AssetFinanceHP'>AssetFinanceHP</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={AssetFinanceHP}/>
 
                     <h2 id='BankCards'>BankCards</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={BankCards}/>
 
                     <h2 id='CreditSales'>CreditSales</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={CreditSales}/>
 
                     <h2 id='CurrentAccounts'>CurrentAccounts</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={CurrentAccounts}/>
 
                     <h2 id='MailOrderHomeShopping'>MailOrderHomeShopping</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={MailOrderHomeShopping}/>
 
                     <h2 id='Mortgages'>Mortgages</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={Mortgages}/>
 
                     <h2 id='RetailStoreCards'>RetailStoreCards</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={RetailStoreCards}/>
 
                     <h2 id='SecuredLoans'>SecuredLoans</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={SecuredLoans}/>
 
                     <h2 id='UnsecuredLoans'>UnsecuredLoans</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={UnsecuredLoans}/>
 
                     <h2 id='Utilities'>Utilities</h2>
+                    <p>Note: To see the definition of a variable, click on it's name</p>
                     <KeysTable jsonData={Utilities}/>
 
             </div>
