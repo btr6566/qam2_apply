@@ -29,7 +29,7 @@ function CaisRow({ LocationIndicator, ApplicantIndicator, CAISDetails }) {
             case 'S':
                 return 'Settled';
             case 'D':
-                return 'Dormant';
+                return 'Delinquent';
             case 'F':
                 return 'Defaulted';
             default:

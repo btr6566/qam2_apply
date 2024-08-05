@@ -30,12 +30,29 @@ function RecentAppsTable() {
     //Loads into state
     const [mostRecentApps, setMostRecentApps] = useState([]);
 
+    // eslint-disable-next-line
+    const [mostRecentAppsError, setMostRecentAppsError] = useState(null);
+
     
     //UseEffect causes React to re-render when promise is fuffilled?
+    // useEffect(() => {
+    //     fetch(mostRecentURL)
+    //         .then((res) => res.json())
+    //         .then((res) => setMostRecentApps(res.payload));
+    // }, []);
     useEffect(() => {
         fetch(mostRecentURL)
-            .then((res) => res.json())
-            .then((res) => setMostRecentApps(res.payload));
+            .then((res) => {
+                if (!res.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return res.json();
+            })
+            .then((data) => setMostRecentApps(data.payload))
+            .catch((error) => {
+                console.error('There was a problem with the fetch operation:', error);
+                setMostRecentAppsError(error.message);
+            });
     }, []);
 
     //Log to Console once data changes

@@ -39,6 +39,11 @@ function RawData({delphi}) {
             <h1>Raw Data</h1>
             
             <h2 id='cais'>CAIS - Credit Account Information Sharing</h2>
+            <p>
+                CAIS is a membership driven data sharing network that collects 
+                and distributes credit data on both Consumer and Commercial accounts. 
+                Each row below represents 1 credit agreement matched to the applicant.
+            </p>
             <CaisTable jsonData={caisData}/>
 
 
