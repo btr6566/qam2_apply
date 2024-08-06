@@ -3,7 +3,8 @@ body, header {
   font-family: 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(233, 235, 73);
+  /* background-color: rgb(233, 235, 73); */
+  background-color: rgb(234, 234, 233);
   min-height: 80vh;
 }
 
