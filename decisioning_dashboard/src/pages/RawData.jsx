@@ -29,11 +29,11 @@ function RawData({delphi}) {
 
     return (
         <div className={styles.container}>
-        <div className={styles.pageNav}>
+        {/* <div className={styles.pageNav}>
             <ul className={styles.pageLinksList}>
                 <li className={styles.pageLink}><a className='link' href="#cais">CAIS</a></li>
             </ul>
-        </div>
+        </div> */}
 
         <div className={styles.content}>
             <h1>Raw Data</h1>
