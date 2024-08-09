@@ -52,15 +52,15 @@ function SummaryData({delphi}) {
             <div className={styles.pageNavContainer}>
                 <div className={styles.pageNav}>
                     <ul className={styles.pageLinksList}>
-                        <li className={styles.pageLink}><a className='link' href="#cais">CAIS</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#publicInfo">Public Info</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#er">Electoral Roll</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#cifas">CIFAS</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#caps">CAPS</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#noc">NOC</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#cml">CML</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#gain">GAIN</a></li>
-                        <li className={styles.pageLink}><a className='link' href="#tpd">TPD</a></li>
+                        <li className={styles.pageLink}><a href="#cais">CAIS</a></li>
+                        <li className={styles.pageLink}><a href="#publicInfo">Public Info</a></li>
+                        <li className={styles.pageLink}><a href="#er">Electoral Roll</a></li>
+                        <li className={styles.pageLink}><a href="#cifas">CIFAS</a></li>
+                        <li className={styles.pageLink}><a href="#caps">CAPS</a></li>
+                        <li className={styles.pageLink}><a href="#noc">NOC</a></li>
+                        <li className={styles.pageLink}><a href="#cml">CML</a></li>
+                        <li className={styles.pageLink}><a href="#gain">GAIN</a></li>
+                        <li className={styles.pageLink}><a href="#tpd">TPD</a></li>
                     </ul>
                 </div>
             </div>

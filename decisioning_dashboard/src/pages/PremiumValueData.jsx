@@ -48,46 +48,46 @@ function PremiumValueData({delphi}) {
 
     return (
         <div className={styles.container}>
-            
+
             <div className={styles.pageNavContainer}>
                 <div className={styles.pageNav}>
                     <ul className={styles.pageLinksList}>
 
                         {/* Various High Level */}
-                        <li><a className='link' href="#tpd">TPD</a></li>
-                        <li><a className='link' href="#cii">CII</a></li>
-                        <li><a className='link' href="#mosaic">Mosaic</a></li>
-                        <li><a className='link' href="#scoring">Scoring</a></li>
-                        <li><a className='link' href="#sortCodeAggregation">Sort Code Aggregation</a></li>
-                        <li><a className='link' href="#addrLink">Address Link</a></li>
-                        <li><a className='link' href="#director">Director</a></li>
-                        <li><a className='link' href="#ageDoB">AgeDoB</a></li>
-                        <li><a className='link' href="#bespoke">Bespoke</a></li>
-                        <li><a className='link' href="#impairedCH">ImpairedCH</a></li>
-                        <li><a className='link' href="#DeferredPaymentCreditSummary">Deferred Payment Credit Summary</a></li>
+                        <li className={styles.pageLink} ><a href="#tpd">TPD</a></li>
+                        <li className={styles.pageLink} ><a href="#cii">CII</a></li>
+                        <li className={styles.pageLink} ><a href="#mosaic">Mosaic</a></li>
+                        <li className={styles.pageLink} ><a href="#scoring">Scoring</a></li>
+                        <li className={styles.pageLink} ><a href="#sortCodeAggregation">Sort Code Aggregation</a></li>
+                        <li className={styles.pageLink} ><a href="#addrLink">Address Link</a></li>
+                        <li className={styles.pageLink} ><a href="#director">Director</a></li>
+                        <li className={styles.pageLink} ><a href="#ageDoB">AgeDoB</a></li>
+                        <li className={styles.pageLink} ><a href="#bespoke">Bespoke</a></li>
+                        <li className={styles.pageLink} ><a href="#impairedCH">ImpairedCH</a></li>
+                        <li className={styles.pageLink} ><a href="#DeferredPaymentCreditSummary">Deferred Payment Credit Summary</a></li>
 
                         {/* AdditDelphiBlocks */}
-                        <li><a className='link' href="#additDelphiBlocks">AdditDelphiBlocks</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#APACSCCBehavrlData">APACSCC Behavioural Data</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#Utilisationblock">Utilisation Block</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#NeverPaidDefsBlock">Never Paid Defs Block</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#TelecommsBlock">Telecomms Block</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#TrendedData">Trended Data</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#EstimatedDisposableIncomeRAG">Estimated Disposable Income RAG</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#HighCostCredit">High Cost Credit</a></li>
+                        <li><a className={styles.pageLink} href="#additDelphiBlocks">AdditDelphiBlocks</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#APACSCCBehavrlData">APACSCC Behavioural Data</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#Utilisationblock">Utilisation Block</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#NeverPaidDefsBlock">Never Paid Defs Block</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#TelecommsBlock">Telecomms Block</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#TrendedData">Trended Data</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#EstimatedDisposableIncomeRAG">Estimated Disposable Income RAG</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#HighCostCredit">High Cost Credit</a></li>
 
                         {/* AdditDelphiBlocks */}
-                        <li className={styles.pageLink}><a className='link' href="#VerticalMarkets">VerticalMarkets</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#AssetFinanceHP">Asset Finance HP</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#BankCards">Bank Cards</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#CreditSales">Credit Sales</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#CurrentAccounts">Current Accounts</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#MailOrderHomeShopping">Mail Order Home Shopping</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#Mortgages">Mortgages</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#RetailStoreCards">Retail Store Cards</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#SecuredLoans">Secured Loans</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#UnsecuredLoans">Unsecured Loans</a></li>
-                            <li className={styles.pageLinkLvl2}><a className='link' href="#Utilities">Utilities</a></li> 
+                        <li className={styles.pageLink}><a className={styles.pageLink} href="#VerticalMarkets">VerticalMarkets</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#AssetFinanceHP">Asset Finance HP</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#BankCards">Bank Cards</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#CreditSales">Credit Sales</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#CurrentAccounts">Current Accounts</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#MailOrderHomeShopping">Mail Order Home Shopping</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#Mortgages">Mortgages</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#RetailStoreCards">Retail Store Cards</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#SecuredLoans">Secured Loans</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#UnsecuredLoans">Unsecured Loans</a></li>
+                            <li className={styles.pageLinkLvl2}><a href="#Utilities">Utilities</a></li> 
                     </ul>
                 </div>
             </div>
