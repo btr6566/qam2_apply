@@ -28,7 +28,7 @@ import styles from './styles/Home.module.css'
 //!==============
 //! Component Definition
 //!==============
-function Home () {
+function Home ({getDelphiData}) {
 
 
 
