@@ -2,6 +2,19 @@
     display: flex;
 }
 
+.pageNavContainer {
+    width: 250px; /* Adjust the width as needed */
+    background-color: #6e61ff; /* Optional: for visual distinction */
+
+    word-wrap: break-word; /* or word-break: break-all; */
+
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 100px; /* Adjust this value to control the distance from the top. MUST have a unit e.g. px if not 0 */
+    z-index: 900; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+
+}
+
 .pageNav {
     width: 250px; /* Adjust the width as needed */
     background-color: #6e61ff; /* Optional: for visual distinction */
@@ -10,30 +23,24 @@
 
     position: -webkit-sticky; /* For Safari */
     position: sticky;
-    top: 100; /* Adjust this value to control the distance from the top */
+    top: 100px; /* Adjust this value to control the distance from the top. MUST have a unit e.g. px if not 0 */
     z-index: 900; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
 
 }
 
 .pageLinksList {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 100; /* Adjust this value to control the distance from the top */
-    z-index: 950; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+    margin-left: 0px;
 }
 
 .pageLink {
-    position: -webkit-sticky; /* For Safari */
-    position: sticky;
-    top: 100; /* Adjust this value to control the distance from the top */
-    z-index: 975; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+    margin-left: 0px;
 }
 
 .pageLinkLvl2 {
-    position: -webkit-sticky; /* For Safari */
+    /* position: -webkit-sticky; 
     position: sticky;
-    top: 100; /* Adjust this value to control the distance from the top */
-    z-index: 975; /* Ensure it stays above other content, Except the top NavBar set to 1000 */
+    top: 100; 
+    z-index: 975;  */
 
     margin-left: 20px; /* Adjust the value as needed */
 }
